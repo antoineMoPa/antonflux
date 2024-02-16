@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: anton-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+      - name: myapp
+        image: nginx
+        ## this part is a bit tricky. hiding for now.
+        ## volumeMounts:
+        ##   - name: static-content
+        ##     mountPath: /usr/share/nginx/html/
+      ## this part is a bit tricky. hiding for now.
+      ## volumes:
+      ##   - name: static-content
+      ##     hostPath:
+      ##       path: $STATIC_CONTENT_PATH
+      ##       type: Directory

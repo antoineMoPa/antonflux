@@ -1,0 +1,6 @@
+resources:
+  - admin-binding.yaml
+  - admin.yaml
+  - anton-deployment.yaml
+  - nginx-service.yaml
+  - secrets.yaml
