@@ -1,4 +1,5 @@
 resources:
+  - namespace.yaml
   - admin-binding.yaml
   - admin.yaml
   - anton-deployment.yaml
