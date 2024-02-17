@@ -1,5 +1,6 @@
 resources:
   - namespace.yaml
+  - k8s-dashboard-recommended.yaml
   - admin-binding.yaml
   - admin.yaml
   - anton-deployment.yaml
