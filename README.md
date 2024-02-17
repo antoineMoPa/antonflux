@@ -273,3 +273,15 @@ After pushing this change, my new flux cluster started working as expected:
 ## What I learned
 
 - Flux basically synchronizes kustomizations from a git repo to a k8s cluster
+
+
+## Addendum
+
+Installing on new laptop:
+
+```bash
+kubectl config use-context docker-desktop
+brew install fluxcd/tap/flux
+flux bootstrap git --url=ssh://git@github.com/antoineMoPa/antonflux.git --private-key-file= # put your private key path here
+open http://localhost:30008/
+```
