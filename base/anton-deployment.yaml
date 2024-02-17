@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: anton-deployment
+  name: antonflux-deployment
   namespace: antonflux
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: myapp
+      app: antonfluxapp
   template:
     metadata:
       labels:
-        app: myapp
+        app: antonfluxapp
     spec:
       containers:
-      - name: myapp
+      - name: antonfluxapp
         image: nginx
         ## this part is a bit tricky. hiding for now.
         ## volumeMounts:
