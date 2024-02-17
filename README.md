@@ -1,4 +1,4 @@
-# Antoine learns k8s and flux
+# Antoine learns flux
 
 ## Context
 
